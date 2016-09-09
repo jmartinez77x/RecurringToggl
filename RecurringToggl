@@ -1,0 +1,9 @@
+#!/bin/bash
+clear
+
+#2016-08-30
+#Terminal command to run ruby code to post recurring events to toggl
+#Created by Joe Martinez
+
+cd ~/Desktop/RecurringToggl
+ruby RecurringToggl.rb
