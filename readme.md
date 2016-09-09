@@ -4,12 +4,12 @@ Requirements
 - Your Toggl API token
 - Your Toggl team id
 
-
+___
 
 The purpose of this program is to programmatically post recurring events to Toggl. I was frustrated by continually have to add the same recurring events to Toggl so I used the Ruby wrapper found here: https://github.com/kanet77/togglv8 to post them semi-automatically. (This requires the ruby language as well) 
 The way it works is you either run the ruby code manually or setup an executable script to run it for you. When it runs it will get the current day of the week and add whatever events you have added under that day within the code.
 
-
+___
 
 In order for this to work for you you will need to get your Toggl API Token. This can be found under your profile on Toggl.
 
@@ -19,7 +19,7 @@ This will return json text which you can use http://codebeautify.org/jsonviewer 
 
 curl -v -u [API TOKEN GOES HERE]:api_token -X GET https://www.toggl.com/api/v8/workspaces/[TEAM NUMBER GOES HERE]/projects 
 
-
+___
 
 Once you have that information you are ready to edit the days within the ruby program.
 I have set events under each day which include description, project id, starting hour, starting minute, and the duration in seconds. 
